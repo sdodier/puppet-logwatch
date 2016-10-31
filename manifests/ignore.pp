@@ -4,7 +4,7 @@ define logwatch::ignore (
 ) {
   concat::fragment { $title:
     target  => 'ignore.conf',
-    content => "$regex\n",
+    content => "${regex}\n",
     order   => '05',
   }
 }
