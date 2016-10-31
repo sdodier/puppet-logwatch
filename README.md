@@ -34,7 +34,7 @@ This module requires puppetlabs-stdlib >= 3.2.0
 ###What logwatch affects
 
  * logwatch package.
- * logwatch configuration file.
+ * logwatch configuration files.
 
 ##Usage
 
@@ -54,6 +54,16 @@ This module requires puppetlabs-stdlib >= 3.2.0
  }
 ```
 
+#### Managing `ignore.conf`
+
+Add a regex to `ignore.conf` to suppress that output from the logwatch report
+
+```puppet
+  logwatch::ignore { 'my_rule':
+    regex => 'ignore_lines_that_match_this_regex',
+  }
+```
+
 ##Reference
 
 ###Classes
@@ -61,6 +71,7 @@ This module requires puppetlabs-stdlib >= 3.2.0
 ####Public Classes
 
 * logwatch: Main class, includes all other classes.
+* logwatch::ignore: Manage the contents of `ignore.conf`
 
 ####Private Classes
 
@@ -68,6 +79,8 @@ This module requires puppetlabs-stdlib >= 3.2.0
 * logwatch::config: Handles the configuration file.
 
 ####Parameters
+
+##### `logwatch`
 
 ```
 output
@@ -79,6 +92,12 @@ detail
 service
 package_ensure
 package_name
+```
+
+##### `logwatch::ignore`
+
+```
+regex
 ```
 
 ##Limitations
