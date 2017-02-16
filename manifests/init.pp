@@ -35,9 +35,9 @@ class logwatch (
   validate_string($package_ensure)
   validate_string($package_name)
 
-  anchor { 'logwatch::begin': } ->
-  class { 'logwatch::install': } ->
-  class { 'logwatch::config': } ->
-  anchor { 'logwatch::end': }
+  anchor { '::logwatch::begin': } ->
+  class { '::logwatch::install': } ->
+  class { '::logwatch::config': } ->
+  anchor { '::logwatch::end': }
 
 }
