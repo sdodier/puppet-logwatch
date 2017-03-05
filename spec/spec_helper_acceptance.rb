@@ -1,10 +1,7 @@
 require 'beaker-rspec'
-require 'beaker-rspec/helpers/serverspec'
+require 'beaker/puppet_install_helper'
 
-hosts.each do |host|
-  # Install Puppet
-  install_puppet
-end
+run_puppet_install_helper unless ENV['BEAKER_provision'] == 'no'
 
 UNSUPPORTED_PLATFORMS = ['Suse','windows','AIX','Solaris']
 
