@@ -26,6 +26,8 @@ group :development do
   gem "travis-lint"
   gem "puppet-blacksmith"
   gem "guard-rake"
+  gem 'json_pure', '<= 2.0.1',  :require => false if RUBY_VERSION < '2.0.0'
+  gem 'safe_yaml', '~> 1.0.4'
 end
 
 group :system_tests do
