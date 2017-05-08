@@ -15,29 +15,29 @@
 7. [Development - Guide for contributing to the module](#development)
     * [Contributing](#contributing)
 
-##Overview
+## Overview
 
 The logwatch module configures logwatch on Linux bases systems.
 
-##Module Description
+## Module Description
 
 The logwatch module will manage the installation and configuration of logwatch
 on Linux based systems.
 
-##Setup
+## Setup
 
 **NOTE: You must have a proper MTA installed and configured to send mail externally.**
 
-###Stdlib
+### Stdlib
 
 This module requires puppetlabs-stdlib >= 3.2.0
 
-###What logwatch affects
+### What logwatch affects
 
  * logwatch package.
  * logwatch configuration files.
 
-##Usage
+## Usage
 
 #### Using default values
 
@@ -65,21 +65,21 @@ Add a regex to `ignore.conf` to suppress that output from the logwatch report
   }
 ```
 
-##Reference
+## Reference
 
-###Classes
+### Classes
 
-####Public Classes
+#### Public Classes
 
 * logwatch: Main class, includes all other classes.
 * logwatch::ignore: Manage the contents of `ignore.conf`
 
-####Private Classes
+#### Private Classes
 
 * logwatch::install: Handles the packages.
 * logwatch::config: Handles the configuration file.
 
-####Parameters
+#### Parameters
 
 ##### `logwatch`
 
@@ -101,7 +101,7 @@ package_name
 regex
 ```
 
-##Limitations
+## Limitations
 
 This module has been built on and tested against Puppet 3.
 
@@ -111,6 +111,6 @@ The module has been tested on:
 * CentOS 6/7
 * Ubuntu 12.04/14.04
 
-##Development
+## Development
 
-###Contributing
+### Contributing
