@@ -1,12 +1,12 @@
-#logwatch
+# logwatch
 
 [![Build Status](https://travis-ci.org/jonmosco/puppet-logwatch.svg?branch=master)](https://travis-ci.org/jonmosco/puppet-logwatch)
 
-####Table of Contents
+#### Table of Contents
 
-1. [Overview](#Overview)
-2. [Module Description - What the module does and why it is useful](#Module Description)
-3. [Setup - The basics of getting started with logwatch](#Setup)
+1. [Overview](#overview)
+2. [Module Description - What the module does and why it is useful](#module-description)
+3. [Setup - The basics of getting started with logwatch](#setup)
   ¦ * [What logwatch affects](#what-logwatch-affects)
   ¦ * [Setup requirements](#setup-requirements)
 4. [Usage - Configuration options and additional functionality](#usage)
