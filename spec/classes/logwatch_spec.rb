@@ -24,4 +24,14 @@ describe 'logwatch', :type => :class do
       'mode'   => '0644',
     })
   end
+
+  it do
+    should contain_file('ignore.conf').with({
+      'ensure' => 'file',
+      'path'   => '/etc/logwatch/conf/ignore.conf',
+      'owner'  => 'root',
+      'group'  => 'root',
+      'mode'   => '0644',
+    })
+  end
 end
