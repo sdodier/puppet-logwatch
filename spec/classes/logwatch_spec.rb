@@ -2,6 +2,8 @@ require 'spec_helper'
 
 describe 'logwatch', :type => :class do
 
+  let (:facts) { { :osfamily => 'RedHat', :operatingsystem => 'Centos' } }
+
   it { should contain_class('logwatch::params') }
   it { should contain_class('logwatch::install') }
   it { should contain_class('logwatch::config') }
