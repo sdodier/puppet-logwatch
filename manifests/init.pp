@@ -23,6 +23,7 @@ class logwatch (
   $service        = $logwatch::params::service,
   $package_ensure = $logwatch::params::package_ensure,
   $package_name   = $logwatch::params::package_name,
+  $ignore_conf    = $logwatch::params::ignore_conf,
 ) inherits logwatch::params {
 
   validate_string($output)

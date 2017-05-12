@@ -17,5 +17,6 @@ class logwatch::params {
   $service        = [ 'All' ]
   $package_ensure = 'present'
   $package_name   = 'logwatch'
+  $ignore_conf    = '/etc/logwatch/conf/ignore.conf'
 
 }
