@@ -1,5 +1,11 @@
 # Change Log
 
+##v2.0.0 2017-05-12
+###Summary
+
+- Fix RSpec tests
+- Add ignore.conf
+
 ##v1.0.2 2016-05-24
 ###Summary
 
