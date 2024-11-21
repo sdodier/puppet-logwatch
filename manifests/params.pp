@@ -2,11 +2,11 @@
 #
 class logwatch::params {
 
-  $output         = $::osfamily ? {
+  $output         = $facts['os']['family'] ? {
     'RedHat' => 'unformatted',
     default  => 'stdout',
   }
-  $format         = $::osfamily ? {
+  $format         = $facts['os']['family'] ? {
     'RedHat' => 'text',
     default  => 'test',
   }
